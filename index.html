@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Fullscreen Overlay Navigation | CodingNepal</title> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="active" />
+    <label for="active" class="menu-btn">
+      <svg
+        id="menu"
+        class="ham hamRotate ham7"
+        viewBox="0 0 100 100"
+        width="80"
+        onclick="onClickMenu()"
+      >
+        <path
+          class="line top"
+          d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013"
+        />
+        <path class="line middle" d="m 70,50 h -40" />
+        <path
+          class="line bottom"
+          d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40"
+        />
+      </svg>
+    </label>
+    <div class="wrapper">
+      <ul>
+        <li><a href="#" onclick="onClickMenu()">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="title">Fullscreen Overlay Navigation Bar</div>
+      <p>using only HTML & CSS</p>
+    </div>
+    <script>
+      function onClickMenu() {
+        document.getElementById("menu").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
